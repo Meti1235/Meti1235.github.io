@@ -7,83 +7,114 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 6</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<section class="container-fluid">
-    <header>
-        <nav>
-            <div class="row ">
-                <div class="col-5 offset-1 ">
-                    <img id="logo" src="images/logo.png" alt="">
-                </div>
+    <section class="container-fluid">
+        <header>
+            <nav>
+                <div class="row ">
+                    <div class="col-5 offset-1 ">
+                        <img id="logo" src="images/logo.png" alt="">
+                    </div>
 
-                <div class="col-6">
-                    <ul id="list1">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Video</a></li>
-                        <li><a href="index.html">Destinations</a></li>
-                        <li><a href="index.html">Booking</a></li>
-                        <li>
-                            <button id="signInButton">Sign in</button>
-                        </li>
-                    </ul>
+                    <div class="col-6">
+                        <ul id="list1">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Video</a></li>
+                            <li><a href="index.html">Destinations</a></li>
+                            <li><a href="index.html">Booking</a></li>
+                            <li>
+                                <button id="signInButton">Sign in</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section id="paddingSection" class="container-fluid">
+        <div class="row">
+            <!-- TODO Make sure the widths of these columns are proper; col-N + col-N + ... + offset-N + offset-N = 12 -->
+            <div class="col-4 offset-1 align-self-center" id="section1">
+                <h1 class="travelh1">Travel around<br>the world</h1>
+
+                <p>Plan and book your perfect trip with expert advise, <br>
+                    travel tips destination information and <br>
+                    inspiration from us.
+                </p>
+
+                <button id="signUpNowButton">Sign Up Now</button>
+            </div> <!-- class col-5 -->
+            <div class="col-7" style="overflow: hidden;">
+                <img src="images/header.png" id="backgroundImg" alt="">
+            </div> <!-- class col-7 -->
+        </div> <!-- class row -->
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-7">
+                <div class="square">
+                    <div class="square-content">
+                        <div class="box box-1" aria-label="Maldives"></div>
+                        <div class="box box-2" aria-label="Nepal"></div>
+                        <div class="box box-3" aria-label="Indonesia"></div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-</section>
-<section id="paddingSection" class="container-fluid">
-    <div class="row">
-        <!-- TODO Make sure the widths of these columns are proper; col-N + col-N + ... + offset-N + offset-N = 12 -->
-        <div class="col-4 offset-1 align-self-center" id="section1">
-            <h1 class="travelh1">Travel around<br>the world</h1>
 
-            <p>Plan and book your perfect trip with expert advise, <br>
-                travel tips destination information and <br>
-                inspiration from us.
-            </p>
-
-            <button id="signUpNowButton">Sign Up Now</button>
-        </div> <!-- class col-5 -->
-        <div class="col-7" style="overflow: hidden;">
-            <img src="images/header.png" id="backgroundImg" alt="">
-        </div> <!-- class col-7 -->
-    </div> <!-- class row -->
-</section>
-
-<section class="container-fluid">
-    <div class="row">
-        <div class="col-7">
-            <div class="square">
-                <div class="square-content">
-                    <div class="box box-1" aria-label="Maldives"></div>
-                    <div class="box box-2" aria-label="Nepal"></div>
-                    <div class="box box-3" aria-label="Indonesia"></div>
-                </div>
+            <div class="col-5 align-self-center">
+                <aside id="amazing-places-text">
+                    <h1 id="h1Amazing">Amazing places to enjoy <br>
+                        your travel
+                    </h1>
+                    <p> Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
+                        dui, varius vehicula ligula nulla sit amet lorem. Aenean in ves-
+                        tibulum quam. Cras commodo varius neque, non gravida diam
+                        ultrices nec. Cras nulla mauris, fermentum nec libero in.
+                    </p>
+                    <button id="exproleButton">Explore</button>
+                </aside>
             </div>
         </div>
-
-        <div class="col-5 align-self-center">
-            <aside id="amazing-places-text">
-                <h1 id="h1Amazing">Amazing places to enjoy <br>
-                    your travel
-                </h1>
-                <p> Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
-                    dui, varius vehicula ligula nulla sit amet lorem. Aenean in ves-
-                    tibulum quam. Cras commodo varius neque, non gravida diam
-                    ultrices nec. Cras nulla mauris, fermentum nec libero in.
-                </p>
-                <button id="exproleButton">Explore</button>
-            </aside>
+    </section>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><img src="./images/img-01.png" alt=""></li>
+                <li class="glide__slide"><img src="./images/img-02.png" alt=""></li>
+                <li class="glide__slide"><img src="./images/img-03.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
         </div>
     </div>
-</section>
 
-<script src="javascript.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+
+
+    <script>
+
+        const config = {
+            type: 'carousel',
+            perView: 2
+        }
+        new Glide('.glide',config).mount()
+    </script>
+
+    <script src="javascript.js"></script>
 
 </body>
 
