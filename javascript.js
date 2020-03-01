@@ -25,3 +25,21 @@
 
 // }
 console.log("hi")
+
+var checkbox = document.querySelector('#options-hoverpause-checkbox') // this is for the slider
+
+var glide = new Glide('#options-hoverpause', {
+  hoverpause: checkbox.checked,
+  autoplay: 2000,
+  perView: 3
+})
+
+checkbox.addEventListener('change', function () {
+  glide.update({
+    hoverpause: checkbox.checked
+  })
+})
+
+glide.mount()      //this is for the slider
+
+

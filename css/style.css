@@ -60,20 +60,24 @@ header {
 
 }
 
-
-#signInButton {
-    border: 3px solid #3984f3;
-    color: #3984f3;
-    width: 151px;
-    height: 55px;
-    background-color: #fff;
-}
-
-
-#signInButton:hover {
+.button {
     background-color: #3984f3;
+    border-color: #3984f3;
+    border-style: solid;
     color: #fff;
 }
+
+.button:hover {
+    background-color: #fff;
+    color: #3984f3;
+}
+
+#signInButton {
+    border-width: 3px;
+    width: 151px;
+    height: 55px;
+}
+
 
 html, body {
     background-repeat: no-repeat;
@@ -81,18 +85,10 @@ html, body {
 }
 
 #signUpNowButton, #exproleButton {
-    border: 2px solid #3984f3;
-    color: #fff;
-    background-color: #3984f3;
+    border-width: 2px;
     height: 3.5625rem;
     width: 12.625rem;
     font-size: 20px;
-}
-
-#signUpNowButton:hover {
-    border: 2px solid #3984f3;
-    color: #3984f3;
-    background-color: #fff;
 }
 
 p {
@@ -116,52 +112,47 @@ p {
     padding-bottom: 155px;
 }
 
-.square {
-    border: 3px solid red;
-    overflow: hidden;
-}
-
-.square-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    height: 500px;
-    border: 3px solid blue;
-
-    position: relative;
-    /* Note: Keep left and the width in sync! */
-    left: -170px;
-    width: calc(100% + 170px);
-}
-
-.box {
-    width: 370px;
-    flex: 1;
-    border: 3px solid green;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 20px;
-    box-shadow: inset 0 -200px 100px 0 rgba(0, 0, 0, 0.6);
-}
-
-.box-1 {
-    background-image: url('../images/img-01.png');
-    background-position: 120px -100px;
-}
-
-.box-2 {
-    background-image: url('../images/img-02.png');
-    background-position: right center;
-}
-
-.box-3 {
-    background-image: url('../images/img-03.png');
-}
-
 #amazing-places-text {
     padding: 0 100px;
 }
+.glide__track, .glide__slides, .glide, .glide--ltr, .glide--carousel, .glide--swipeable{
+    overflow-y: visible;
+
+}
+
+
+.glide__slide {
+    height: 500px;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 20px;
+    transition-property: height;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+.glide__slide:hover {
+    position: relative;
+    bottom: 200px;
+  }
+
+
+.glide__arrow {
+    color: white;
+    border-color: #3984f3;
+    background-color: #3984f3;
+    
+}
+
+.glide__arrow:hover {
+    color: #3984f3;
+    background-color: #fff;
+}
+
+.imgResize {
+    width: 100%;
+    height: 100%;
+  
+}
+
+  
