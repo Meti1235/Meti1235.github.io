@@ -115,44 +115,95 @@ p {
 #amazing-places-text {
     padding: 0 100px;
 }
-.glide__track, .glide__slides, .glide, .glide--ltr, .glide--carousel, .glide--swipeable{
-    overflow-y: visible;
-
-}
 
 
 .glide__slide {
     height: 500px;
-    max-width: 500px;
-    overflow: hidden;
-    margin: 20px;
-    transition-property: height;
-    transition-duration: 5s;
-    transition-timing-function: linear;
-    transition-delay: 0.5s;
-}
-.glide__slide:hover {
-    position: relative;
-    bottom: 200px;
-  }
-
-
-.glide__arrow {
-    color: white;
-    border-color: #3984f3;
-    background-color: #3984f3;
+    width: 375px;
     
-}
-
-.glide__arrow:hover {
-    color: #3984f3;
-    background-color: #fff;
+    margin: 75px;
+    margin-left: 20px;
+    position: relative; 
+   
+    
 }
 
 .imgResize {
     width: 100%;
     height: 100%;
+    position: relative; 
+    
   
 }
+
+/* makes the image move */
+.glide__slide:hover {
+    -webkit-animation: floatBubble 1s forwards;
+    -webkit-animation-direction: alternate-reverse;
+
+    
+  }
+
+/* image animation needs position relative*/
+@-webkit-keyframes floatBubble{ 
+    from{
+           bottom:75px;
+           -webkit-animation-timing-function: ease-in;
+      }
+
+      to {
+         bottom: 0;
+         -webkit-animation-timing-function: ease-out;
+      }
+}
+
+
+.moneyTag {
+    width: 110px;
+    height: 43px;
+    background-color: #3984f3;
+    position: absolute;
+    bottom: 430px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    
+}
+
+.vacationName {
+    position: absolute;
+    bottom: 32px;
+    left: 25px;
+    font-size: 23px;
+   color: #ffffff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .glide__arrow {
+    color: white;
+    border-color: #3984f3;
+    background-color: #3984f3;
+    
+}  
+
+.glide__arrow:hover {
+    color: #3984f3;
+    background-color: #fff;
+} */
+
+
 
   
