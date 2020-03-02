@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/glide.core.min.css">
@@ -14,7 +15,6 @@
 </head>
 
 <body>
-
     <section class="container-fluid">
         <header>
             <nav>
@@ -42,7 +42,7 @@
         <div class="row">
             <!-- TODO Make sure the widths of these columns are proper; col-N + col-N + ... + offset-N + offset-N = 12 -->
             <div class="col-4 offset-1 align-self-center" id="section1">
-                <h1 class="travelh1">Travel around<br>the world</h1>
+                <h1 id="travelh1">Travel around<br>the world</h1>
 
                 <p>Plan and book your perfect trip with expert advise, <br>
                     travel tips destination information and <br>
@@ -63,9 +63,60 @@
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide"><img class="imgResize" src="./images/img-01.png" alt=""><div class="moneyTag">$720</div><div class="vacationName">Fulhadhoo, Maldives</div></li>
-                            <li class="glide__slide"><img class="imgResize" src="./images/img-02.png" alt=""><div class="moneyTag">$640</div><div class="vacationName">Kathmandu, Nepal</div></li>
-                            <li class="glide__slide"><img class="imgResize" src="./images/img-03.png" alt=""><div class="moneyTag">$560</div><div class="vacationName">Raja Ampat, Indonesia</div></li>
+                            <li class="glide__slide"><img id="imgResize1">
+                                <div class="moneyTag">$720</div>
+                                <div class="vacationName">Fulhadhoo, Maldives</div>
+                                <div class="stars">
+                                    <form action="">
+                                        <input type="radio" name="star" id="star-5" class="star star-5">
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input type="radio" name="star" id="star-4" class="star star-4">
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input type="radio" name="star" id="star-3" class="star star-3">
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input type="radio" name="star" id="star-2" class="star star-2">
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input type="radio" name="star" id="star-1" class="star star-1">
+                                        <label class="star star-1" for="star-1"></label>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="glide__slide"><img id="imgResize2">
+                                <div class="moneyTag">$640</div>
+                                <div class="vacationName">Kathmandu, Nepal</div>
+                                <div class="stars">
+                                    <form action="">
+                                        <input type="radio" name="star" id="star-5" class="star star-5">
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input type="radio" name="star" id="star-4" class="star star-4">
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input type="radio" name="star" id="star-3" class="star star-3">
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input type="radio" name="star" id="star-2" class="star star-2">
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input type="radio" name="star" id="star-1" class="star star-1">
+                                        <label class="star star-1" for="star-1"></label>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="glide__slide"><img id="imgResize3">
+                                <div class="moneyTag">$560</div>
+                                <div class="vacationName">Raja Ampat, Indonesia</div>
+                                <div class="stars">
+                                    <form action="">
+                                        <input type="radio" name="star" id="star-5" class="star star-5">
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input type="radio" name="star" id="star-4" class="star star-4">
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input type="radio" name="star" id="star-3" class="star star-3">
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input type="radio" name="star" id="star-2" class="star star-2">
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input type="radio" name="star" id="star-1" class="star star-1">
+                                        <label class="star star-1" for="star-1"></label>
+                                    </form>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -91,8 +142,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-
-
     <script>
 
 
@@ -101,11 +150,20 @@
             perView: 3,
             autoplay: 2000,
             gap: 20,
+            checkbox: function () {
+                var checkbox = document.querySelector('#options-hoverpause-checkbox')
+                checkbox.addEventListener('change', function () {
+                    glide.update({
+                        hoverpause: checkbox.checked
+                    })
+                })
+            }
         }
-        new Glide('.glide',config).mount()
+        new Glide('.glide', config).mount()
     </script>
 
     <script src="javascript.js"></script>
+
 
 </body>
 

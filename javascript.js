@@ -26,20 +26,26 @@
 // }
 console.log("hi")
 
-var checkbox = document.querySelector('#options-hoverpause-checkbox') // this is for the slider
 
-var glide = new Glide('#options-hoverpause', {
-  hoverpause: checkbox.checked,
-  autoplay: 2000,
-  perView: 3
-})
 
-checkbox.addEventListener('change', function () {
-  glide.update({
-    hoverpause: checkbox.checked
-  })
-})
 
-glide.mount()      //this is for the slider
+
+
+
+
+
+
+
+
+
+// window.addEventListener('scroll', function() {
+//   document.getElementById('imgResize1').style.boxShadow =  `inset 0 -200px 100px 0 rgba(0, 0, 0, 0.6)`
+//   document.getElementById('imgResize2').style.backgroundPositionY = window.pageYOffset + 'px'
+//   document.getElementById('imgResize3').style.backgroundPositionY = window.pageYOffset + 'px'
+//   console.log(this.window.pageYOffset)
+// });
+
+
+
 
 
