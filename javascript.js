@@ -33,8 +33,26 @@ console.log("hi")
 
 
 
+//automating the slider
 
+let automatedSlider = setInterval(() => {
+  window.onload = document.getElementById("buttonNext").click()
+}, 2000);
 
+let autoSlider = document.getElementById("autoSlider")
+
+autoSlider.addEventListener("mouseenter", function() {
+  clearInterval(automatedSlider);
+});
+
+autoSlider.addEventListener("mouseleave", function() {
+  let automatedSlider = setInterval(() => { //don't touch this :D 
+    window.onload = document.getElementById("buttonNext").click()
+  }, 2000);
+  autoSlider.addEventListener("mouseenter", function() { //at 4am they do make sense it works :D
+    clearInterval(automatedSlider);
+  });
+});
 
 
 

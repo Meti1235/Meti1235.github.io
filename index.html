@@ -11,13 +11,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
 
-   
 
     <section class="container-fluid">
         <header>
@@ -33,7 +32,7 @@
                             <li><a href="index.html">Destinations</a></li>
                             <li><a href="index.html">Booking</a></li>
                             <li>
-                                <button id="signInButton" class="button">Sign in</button>
+                                <button id="signInButton">Sign in</button>
                             </li>
                         </ul>
                     </div>
@@ -55,81 +54,84 @@
                 <button id="signUpNowButton" class="button">Sign Up Now</button>
             </div> <!-- class col-5 -->
             <div class="col-7" style="overflow: hidden;">
-                <img src="images/header.png" id="backgroundImg" alt="">
+                <img src="images/header.png" alt="">
             </div> <!-- class col-7 -->
         </div> <!-- class row -->
     </section>
 
-    <section class="container-fluid">
+    <section id="paddingSection2" class="container-fluid">
         <div class="row">
             <div class="col-7">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
+
                             <li class="glide__slide"><img id="imgResize1">
                                 <div class="moneyTag">$720</div>
                                 <div class="vacationName">Fulhadhoo, Maldives</div>
                                 <div class="stars">
-                                    <form action="">
-                                        <input type="radio" name="star" id="star-5" class="star star-5">
-                                        <label class="star star-5" for="star-5"></label>
-                                        <input type="radio" name="star" id="star-4" class="star star-4">
-                                        <label class="star star-4" for="star-4"></label>
-                                        <input type="radio" name="star" id="star-3" class="star star-3">
-                                        <label class="star star-3" for="star-3"></label>
-                                        <input type="radio" name="star" id="star-2" class="star star-2">
-                                        <label class="star star-2" for="star-2"></label>
-                                        <input type="radio" name="star" id="star-1" class="star star-1">
-                                        <label class="star star-1" for="star-1"></label>
-                                    </form>
+
+                                    <input type="radio" name="star" id="star-5" class="star star-5">
+                                    <label class="star star-5" for="star-5"></label>
+                                    <input type="radio" name="star" id="star-4" class="star star-4">
+                                    <label class="star star-4" for="star-4"></label>
+                                    <input type="radio" name="star" id="star-3" class="star star-3">
+                                    <label class="star star-3" for="star-3"></label>
+                                    <input type="radio" name="star" id="star-2" class="star star-2">
+                                    <label class="star star-2" for="star-2"></label>
+                                    <input type="radio" name="star" id="star-1" class="star star-1">
+                                    <label class="star star-1" for="star-1"></label>
                                 </div>
+                                <p> 9 day tour</p>
                             </li>
                             <li class="glide__slide"><img id="imgResize2">
                                 <div class="moneyTag">$640</div>
                                 <div class="vacationName">Kathmandu, Nepal</div>
                                 <div class="stars">
-                                    <form action="">
-                                        <input type="radio" name="star" id="star-10" class="star star-10">
-                                        <label class="star star-10" for="star-10"></label>
-                                        <input type="radio" name="star" id="star-9" class="star star-9">
-                                        <label class="star star-9" for="star-9"></label>
-                                        <input type="radio" name="star" id="star-8" class="star star-8">
-                                        <label class="star star-8" for="star-8"></label>
-                                        <input type="radio" name="star" id="star-7" class="star star-7">
-                                        <label class="star star-7" for="star-7"></label>
-                                        <input type="radio" name="star" id="star-6" class="star star-6">
-                                        <label class="star star-6" for="star-6"></label>
-                                    </form>
+
+                                    <input type="radio" name="star" id="star-10" class="star star-10">
+                                    <label class="star star-10" for="star-10"></label>
+                                    <input type="radio" name="star" id="star-9" class="star star-9">
+                                    <label class="star star-9" for="star-9"></label>
+                                    <input type="radio" name="star" id="star-8" class="star star-8">
+                                    <label class="star star-8" for="star-8"></label>
+                                    <input type="radio" name="star" id="star-7" class="star star-7">
+                                    <label class="star star-7" for="star-7"></label>
+                                    <input type="radio" name="star" id="star-6" class="star star-6">
+                                    <label class="star star-6" for="star-6"></label>
                                 </div>
+                                <p> 7 day tour</p>
                             </li>
                             <li class="glide__slide"><img id="imgResize3">
                                 <div class="moneyTag">$560</div>
                                 <div class="vacationName">Raja Ampat, Indonesia</div>
                                 <div class="stars">
-                                    <form action="">
-                                        <input type="radio" name="star" id="star-15" class="star star-15">
-                                        <label class="star star-15" for="star-15"></label>
-                                        <input type="radio" name="star" id="star-14" class="star star-14">
-                                        <label class="star star-14" for="star-14"></label>
-                                        <input type="radio" name="star" id="star-13" class="star star-13">
-                                        <label class="star star-12" for="star-13"></label>
-                                        <input type="radio" name="star" id="star-12" class="star star-12">
-                                        <label class="star star-12" for="star-12"></label>
-                                        <input type="radio" name="star" id="star-11" class="star star-11">
-                                        <label class="star star-11" for="star-11"></label>
-                                    </form>
+
+                                    <input type="radio" name="star" id="star-15" class="star star-15">
+                                    <label class="star star-15" for="star-15"></label>
+                                    <input type="radio" name="star" id="star-14" class="star star-14">
+                                    <label class="star star-14" for="star-14"></label>
+                                    <input type="radio" name="star" id="star-13" class="star star-13">
+                                    <label class="star star-12" for="star-13"></label>
+                                    <input type="radio" name="star" id="star-12" class="star star-12">
+                                    <label class="star star-12" for="star-12"></label>
+                                    <input type="radio" name="star" id="star-11" class="star star-11">
+                                    <label class="star star-11" for="star-11"></label>
                                 </div>
+                                <p> 5 day tour</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-5 align-self-center">
                 <aside id="amazing-places-text">
-                    <h1 id="h1Amazing">Amazing places to enjoy <br>
+                    <h1 id="h1Amazing" class="h1Traveler">Amazing places to enjoy <br>
                         your travel
                     </h1>
+
+                    <div id="blueBox1"></div>
                     <p> Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
                         dui, varius vehicula ligula nulla sit amet lorem. Aenean in ves-
                         tibulum quam. Cras commodo varius neque, non gravida diam
@@ -138,34 +140,94 @@
                     <button id="exproleButton" class="button">Explore</button>
                 </aside>
             </div>
-           
+
     </section>
 
+    <section id="paddingSection3"> 
+
+        <h1 class="h1Traveler"> Traveller categories</h1>
+        <div class="blueBox2"></div>
+        <p class="pTraveler"> Maecenas et eros quam ultricies interdum. Proin ac dolor vel neque ullamcorper bladit vitae et felis. Morbi ante urna, imperdiet vel neqeu vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed commodo. Nullam ultricies tortor non diam ullamcorper auctor. In urna tellus, auctor  sit amet est ut, scelerisque volutpat diam.</p>
 
 
+        <div class="swiper-container" id="autoSlider" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="imgResize4"></div>
+                <div class="swiper-slide" id="imgResize5"></div>
+                <div class="swiper-slide" id="imgResize6"></div>
+                <div class="swiper-slide" id="imgResize7"></div>
+                <div class="swiper-slide" id="imgResize8"></div>
+            </div>
+        
+            <!-- Add Arrows -->
+            <div class="swiper-button-next" id="buttonNext"></div>
+            <div class="swiper-button-prev" id="buttonPrev"></div>
+          </div>
+
+    </section>
+
+   
+
+    <section id="paddingSection4">
+        <h1 class="h1Traveler"> Traveller's experiences</h1>
+        <div class="blueBox2"></div>
+        <p class="pTraveler"> 
+            "Curabitur posuere ullamcorper pilvinar. Donec Dignissim bibendum leo, at faucibus enim
+             aliqueam eu. Nullam quis pulviar diam, ac elementum urna. Integer id vehicula tortor, nec
+             pulvinar libero. Ut elit elit, fringilla a nisi ut, dapibus eleifend quam."
+        </p>
+               
+        <div id="imgContainer"> 
+            <img src="images/img-09.png" id="imgResize9" alt="">
+        </div>
+        <h1 id="h1Name">Donquixote Law</h1>
+        <h2 id="h2Traveler">Traveller</h2>
+
+    </section >
+   
+    <section class="container-fluid" id="paddingSection5">
+
+
+        <div id="weatherContainer"> 
+        <img src="images/form-bg.png" id="weatherImg" alt="">
+    </div>
+
+
+    
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
     <script>
-
-
         const config = {
             type: 'carousel',
             startAt: 0,
             perView: 3,
             autoplay: 2000,
-            gap: 20,
-            checkbox: function () {
-                var checkbox = document.querySelector('#options-hoverpause-checkbox')
-                checkbox.addEventListener('change', function () {
-                    glide.update({
-                        hoverpause: checkbox.checked
-                    })
-                })
-            }
+            gap: 20
         }
         new Glide('.glide', config).mount()
     </script>
+    
 
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: "auto",
+      spaceBetween: 1,
+      slidesPerGroup: 1,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
     <script src="javascript.js"></script>
 
 
